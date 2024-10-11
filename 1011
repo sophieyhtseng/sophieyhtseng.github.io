@@ -1,13 +1,2 @@
-<!DOCTYPE html>
-<html>
-<body> 
-<form action="/action_page.php">
-<label for="fname">First name:</label><br> 
-<input type="text" id="fname" name="fname" value="" placeholder="Your first name"><br>
-<br> <label for="lname">Last name:</label><br> <input type="text" id="lname" name="lname" value="" placeholder="Your last name"><br>
-<br> <label for="id">Student ID:</label><br> <input type="text" id="id" name="id" value="" placeholder="Student ID"><br><br><br>
-<input type="submit" value="Submit">
-<input type="reset" value="Reset">
-</form> 
-</body>
-</html>
+<!DOCTYPE html> <html> <body> <form action="/action_page.php"> <label for="fname">First name:</label><br> <input type="text" id="fname" name="fname" value="sophie" placeholder="Your first name"><br><br> <label for="lname">Last name:</label><br> <input type="text" id="lname" name="lname" value="tseng" placeholder="Your last name"><br><br> <label for="id">Student ID:</label><br> <input type="text" id="id" name="id" value="1123504" placeholder="Student ID"><br><br><br> <input type="submit" value="Submit"> <input type="reset" value="Reset"> </form> </body> </html>
+
