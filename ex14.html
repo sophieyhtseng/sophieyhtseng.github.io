@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Headings</title>
+  <style>
+    /* General body styling */
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+      font-family: 'Times New Roman', serif;
+    }
+
+    /* Container styling */
+    .container {
+      padding: 20px;
+      background-color: white;
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      width: 480px;
+      text-align: left;
+    }
+
+    /* Heading 1 styling */
+    .heading1 {
+      position: relative;
+      font-size: 34px;
+      font-weight: bold;
+      margin: 20px 0 10px; /* Reduced bottom margin for line proximity */
+      color: black;
+      text-shadow: 2px 2px 0px pink; /* Pink shadow effect */
+    }
+
+    /* Black line above heading 1 */
+    .heading1::before {
+      content: '';
+      position: absolute;
+      top: -5px; /* Position closer to the heading */
+      left:1px; /* Shorter line: shifted slightly inward */
+      width: 60%; /* Line shorter than the text width */
+      height: 5px; /* Thicker line */
+      background-color: black;
+      box-shadow: 2px 2px 0px pink; /* Pink shadow for the line */
+    }
+
+    /* Heading 2 styling */
+    .heading2 {
+      font-size: 22px;
+      font-style: italic;
+      border: 3px solid #ffd700; /* Gold border */
+      padding: 5px 20px;
+      margin: 0 0 20px;
+      display: inline-block;
+      background-color: white;
+      box-shadow: 0px 0px 0px 1px black inset; /* Inner black frame */
+      width: calc(100% - 45px); /* Extends the frame width */
+    }
+
+    /* Heading 3 styling */
+    .heading3 {
+      font-size: 18px;
+      text-align: right;
+      text-decoration: underline;
+      color: black;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading1">This is heading 1</h1>
+    <h2 class="heading2">This is heading 2</h2>
+    <h3 class="heading3">This is heading 3</h3>
+  </div>
+</body>
+</html>
